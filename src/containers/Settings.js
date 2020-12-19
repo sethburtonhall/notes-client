@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { API } from 'aws-amplify';
-import { useHistory } from 'react-router-dom';
-import { onError } from '../libs/errorLib';
-import config from '../config';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Settings() {
-  const history = useHistory();
-  const [isLoading, setIsLoading] = useState(false);
-
-  return <div className="Settings"></div>;
+  return (
+    <div className="Settings">
+      This is the settings page.{' '}
+      <Link to="/">Return to your list of notes.</Link>
+    </div>
+  );
 }
